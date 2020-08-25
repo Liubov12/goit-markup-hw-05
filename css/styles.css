@@ -237,7 +237,8 @@ ul{
     pointer-events: none;
 }
 .modal{
-    position: absolute;
+   
+    position: fixed;
     top:50%;
     left:50%;
     min-width: 528px;
@@ -246,26 +247,31 @@ ul{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     
-    transform: translate(-50%,-50%) ;
+    transform: translate(-50%,-50%);
 }
 
-.button-modal:after{
-    content: "";
+.button-modal{
     position: absolute;
-    margin-top: 8px;
-   
-    margin-right: 8px;
-   
+    display: inline-block;
+    top:8px;
+    right: 8px;
     width: 30px;
     height: 30px;
 
     
     background-repeat: no-repeat;
     border-radius:50%;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;;
     background-size: contain;
     align-items: flex-end;
+    display: flex;
 }
-
+.modal-svg{
+    align-items: center;
+    padding:9 10px
+}
 
 /* banner */
 
